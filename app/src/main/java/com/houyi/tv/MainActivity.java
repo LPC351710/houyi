@@ -22,6 +22,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView() {
         super.initView();
+        setSwipeBackEnable(false);
         mAgentWeb = AgentWeb.with(this)
                 .setAgentWebParent(llContent, new LinearLayout.LayoutParams(-1, -1))
                 .closeIndicator()
